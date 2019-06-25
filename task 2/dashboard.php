@@ -17,6 +17,7 @@ $invalidCost = false;
 $friends = array();
 $friendsCost = array();
 $moneyLent = 0;
+
 if(isset($_POST['addbutton'])){
 	$title = $_POST['title'];
 	$description = $_POST['description'];

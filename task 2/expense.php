@@ -26,6 +26,10 @@ class Expense {
 		if(empty($this->friends)){
 			$query = "INSERT INTO expense (username,title,description,cost,amount_owe,cur_date) VALUES ('$this->username','$this->title','$this->description','$this->cost','0','$this->date')";
 			$insert = mysqli_query($this->con,$query);
+			if($insert)
+				{
+					echo "hii";
+				}
 		}
 		else {
 			$combineArray = array_combine($this->friends,$this->friendsCost);

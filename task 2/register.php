@@ -1,6 +1,7 @@
 <?php
 session_start();
 include('initial.php');
+include("createDB.php");
 include('account.php');
 
 $account = new Account($con);
